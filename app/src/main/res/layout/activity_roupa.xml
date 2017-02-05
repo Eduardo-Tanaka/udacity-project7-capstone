@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.eduardotanaka.knowdown.RoupaActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_meu_avatar"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:background="@drawable/shape_timer"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/margin_conteudo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_red_white"
+        android:textColor="@android:color/holo_red_dark"
+        android:width="60dp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:id="@+id/txtPontosRoupa"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_moeda"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:id="@+id/lblPontosRoupa"
+        android:maxLines="1"
+        android:layout_marginTop="24dp"
+        android:layout_alignLeft="@id/txtPontosRoupa"
+        android:layout_alignStart="@id/txtPontosRoupa" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_below="@+id/lblPontosRoupa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_conteudo"
+        android:layout_marginRight="@dimen/margin_conteudo"
+        android:layout_marginTop="@dimen/margin_top_conteudo"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_content"
+        android:id="@+id/relativeLayoutAcerto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/roupa"
+            android:id="@+id/txtOpcoesCustomizacao"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtOpcoesCustomizacao"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/opcao_roupa_padding"
+                android:paddingRight="@dimen/opcao_roupa_padding">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:contentDescription="@string/img_roupa"
+                        android:layout_width="@dimen/opcao_roupa_size"
+                        android:layout_height="@dimen/opcao_roupa_size"
+                        android:id="@+id/imgRoupaOpcao1"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/txtRoupaOpcao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:padding="5dp"
+                        android:background="@drawable/shape_red"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:contentDescription="@string/img_roupa"
+                        android:layout_width="@dimen/opcao_roupa_size"
+                        android:layout_height="@dimen/opcao_roupa_size"
+                        android:id="@+id/imgRoupaOpcao2"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/txtRoupaOpcao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:padding="5dp"
+                        android:background="@drawable/shape_red"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:contentDescription="@string/img_roupa"
+                        android:layout_width="@dimen/opcao_roupa_size"
+                        android:layout_height="@dimen/opcao_roupa_size"
+                        android:id="@+id/imgRoupaOpcao3"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/txtRoupaOpcao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:padding="5dp"
+                        android:background="@drawable/shape_red"
+                        android:clickable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingLeft="@dimen/opcao_roupa_padding"
+                android:paddingRight="@dimen/opcao_roupa_padding">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:contentDescription="@string/img_roupa"
+                        android:layout_width="@dimen/opcao_roupa_size"
+                        android:layout_height="@dimen/opcao_roupa_size"
+                        android:id="@+id/imgRoupaOpcao4"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/txtRoupaOpcao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:padding="5dp"
+                        android:background="@drawable/shape_red"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:contentDescription="@string/img_roupa"
+                        android:layout_width="@dimen/opcao_roupa_size"
+                        android:layout_height="@dimen/opcao_roupa_size"
+                        android:id="@+id/imgRoupaOpcao5"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/txtRoupaOpcao5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:padding="5dp"
+                        android:background="@drawable/shape_red"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_margin="10dp">
+
+                    <ImageView
+                        android:contentDescription="@string/img_roupa"
+                        android:layout_width="@dimen/opcao_roupa_size"
+                        android:layout_height="@dimen/opcao_roupa_size"
+                        android:id="@+id/imgRoupaOpcao6"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/txtRoupaOpcao6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#fff"
+                        android:text=""
+                        android:padding="5dp"
+                        android:background="@drawable/shape_red"
+                        android:clickable="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/opcao_roupa_padding"
+                android:paddingRight="@dimen/opcao_roupa_padding"
+                android:id="@+id/layoutCamisa"
+                android:clickable="true">
+
+                <ImageView
+                    android:contentDescription="@string/img_roupa"
+                    android:layout_width="@dimen/opcao_roupa_size"
+                    android:layout_height="@dimen/opcao_roupa_size"
+                    android:id="@+id/imgOpcaoCamisa"
+                    android:src="@drawable/opcao_camisa"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtOpcaoCamisa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/camisa"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/opcao_roupa_padding"
+                android:paddingRight="@dimen/opcao_roupa_padding"
+                android:id="@+id/layoutCalca">
+
+                <ImageView
+                    android:contentDescription="@string/img_roupa"
+                    android:layout_width="@dimen/opcao_roupa_size"
+                    android:layout_height="@dimen/opcao_roupa_size"
+                    android:id="@+id/imgOpcaoCalca"
+                    android:src="@drawable/opcao_calca"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtOpcaoCalca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calca"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/opcao_roupa_padding"
+                android:paddingRight="@dimen/opcao_roupa_padding"
+                android:id="@+id/layoutSapato">
+
+                <ImageView
+                    android:contentDescription="@string/img_roupa"
+                    android:layout_width="@dimen/opcao_roupa_size"
+                    android:layout_height="@dimen/opcao_roupa_size"
+                    android:id="@+id/imgOpcaoSapato"
+                    android:src="@drawable/opcao_sapato"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtOpcaoSapato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sapato"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="@dimen/opcao_roupa_padding"
+                android:paddingRight="@dimen/opcao_roupa_padding"
+                android:id="@+id/layoutOculos">
+
+                <ImageView
+                    android:contentDescription="@string/img_roupa"
+                    android:layout_width="@dimen/opcao_roupa_size"
+                    android:layout_height="@dimen/opcao_roupa_size"
+                    android:id="@+id/imgOpcaoOculos"
+                    android:src="@drawable/opcao_oculos"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtOpcaoOculos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/oculos"
+                    android:clickable="true"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="90dp"
+        android:src="@drawable/guarda_roupa"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/imgGuardaRoupa"
+        android:layout_marginLeft="@dimen/margin_conteudo"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/txtGuardaRoupa"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="@string/guarda_roupa"
+        android:background="@drawable/shape_red_white"
+        android:textColor="@color/yellow"
+        android:shadowColor="#000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/imgGuardaRoupa"
+        android:textAlignment="center"
+        android:padding="5dp"
+        android:clickable="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

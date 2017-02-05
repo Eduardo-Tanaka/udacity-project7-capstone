@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/menu_logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_play"
+        android:orderInCategory="100"
+        android:title="@string/menu_play"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/action_roupa"
+        android:orderInCategory="100"
+        android:title="@string/menu_roupa"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_guarda_roupa"
+        android:orderInCategory="100"
+        android:title="@string/menu_guarda_roupa"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_ranking"
+        android:orderInCategory="100"
+        android:title="@string/menu_ranking"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_avatar"
+        android:orderInCategory="100"
+        android:title="@string/menu_avatar"
+        app:showAsAction="never" />
+</menu>

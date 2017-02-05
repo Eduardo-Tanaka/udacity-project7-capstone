@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.eduardotanaka.knowdown.AcertoActivity"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_red_white"
+        android:textColor="@android:color/holo_red_dark"
+        android:width="60dp"
+        android:textAlignment="center"
+        tools:text="90"
+        android:textSize="16sp"
+        android:id="@+id/txtPontosAcerto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_pontos"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"
+        android:id="@+id/lblPontosAcerto"
+        android:layout_below="@id/txtPontosAcerto"
+        android:layout_alignLeft="@id/txtPontosAcerto"
+        android:layout_alignStart="@id/txtPontosAcerto" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_below="@id/lblPontosAcerto"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_conteudo"
+        android:layout_marginRight="@dimen/margin_conteudo"
+        android:layout_marginTop="@dimen/margin_top_conteudo"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/shape_content"
+        android:id="@+id/relativeLayoutAcerto">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fonte_msg_acerto_erro"
+            android:textStyle="bold"
+            android:text="@string/msg_parabens"
+            android:id="@+id/txtParabens"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fonte_msg_acerto_erro"
+            android:textStyle="bold"
+            android:text="@string/msg_acerto"
+            android:id="@+id/txtAcerto"
+            android:layout_below="@id/txtParabens"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="@dimen/img_acerto_size"
+            android:layout_height="@dimen/img_acerto_size"
+            android:id="@+id/imageView"
+            android:src="@drawable/acerto"
+            android:layout_below="@+id/txtAcerto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/fonte_msg_feedback"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/shape_acerto"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/txtAcertoFeedback"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtAvatarAcerto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_avatar"
+        android:textColor="@color/yellow"
+        android:shadowColor="@color/black"
+        android:shadowDx="15"
+        android:shadowDy="15"
+        android:shadowRadius="15"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="29dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:textSize="20sp"
+        android:textColor="@color/yellow"
+        android:id="@+id/imgAvatarAcerto"
+        android:background="@drawable/shape_red_white"
+        android:layout_above="@id/txtAvatarAcerto"
+        android:layout_marginLeft="25dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatares"
+            android:id="@+id/imgAcerto"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:id="@+id/btnJogarAcerto"
+        android:textSize="@dimen/activities_title_size"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:textColor="@color/yellow"
+        android:background="@drawable/shape_timer"
+        android:layout_alignTop="@+id/imgAvatarAcerto"
+        android:layout_alignRight="@+id/relativeLayoutAcerto"
+        android:layout_alignEnd="@+id/relativeLayoutAcerto" />
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alerta">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/alerta_messagem"
+        android:id="@+id/textView" />
+    <ImageView
+        android:contentDescription="@string/img_roupa"
+        android:layout_marginTop="5dp"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:id="@+id/imgAlerta"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnCancelar"
+            android:text="@string/btn_cancelar"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:text="@string/txt_confirmar"
+            android:layout_marginLeft="20dp"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+
+</LinearLayout>

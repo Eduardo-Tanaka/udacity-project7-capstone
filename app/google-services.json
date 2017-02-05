@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1040828939674",
+    "firebase_url": "https://knowdown-133c2.firebaseio.com",
+    "project_id": "knowdown-133c2",
+    "storage_bucket": "knowdown-133c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040828939674:android:d96da14c99b8b610",
+        "android_client_info": {
+          "package_name": "br.com.eduardotanaka.knowdown"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040828939674-5bpr9bsj64q0frfg0jbj1c304mk931pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA4aGiXLtPKFahsa3u7ggvkK_yVFG9MFw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

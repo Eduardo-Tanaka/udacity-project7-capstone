@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">KnowDown</string>
+
+    <!-- Main Activity -->
+    <string name="welcome">WELCOME!</string>
+    <string name="comprar">BUY</string>
+
+    <!-- Error Messages -->
+    <string name="msg_campo_obrigatorio">Required Field</string>
+    <string name="msg_email_invalido">Invalid Email</string>
+    <string name="msg_senha_vazia">Enter a password</string>
+    <string name="msg_senha_diferente">Passwords are different</string>
+    <string name="msg_senha_minimo">Password must have at least 6 characters</string>
+    <string name="msg_servico_indisponivel">The service is indisponible</string>
+
+    <!-- Alerta da roupa -->
+    <string name="btn_cancelar">CANCEL</string>
+    <string name="alerta_messagem">Do you want to dress this costume?</string>
+
+    <!-- Register Activity -->
+    <string name="register">REGISTER</string>
+    <string name="user">USER:</string>
+    <string name="user_hint">email</string>
+    <string name="email">EMAIL:</string>
+    <string name="password">PASSWORD:</string>
+    <string name="password_hint">password</string>
+    <string name="password_confirm">CONFIRM PASSWORD:</string>
+    <string name="choose_avatar">CHOOSE A AVATAR:</string>
+    <string name="success_register">Success Registered!</string>
+
+    <!-- Login Activity -->
+    <string name="play">PLAY</string>
+    <string name="new_user">NEW USER</string>
+    <string name="ranking">RANKING</string>
+    <string name="forgot_password">FORGOT PASSWORD</string>
+    <string name="login_error">Login Failed</string>
+    <string name="email_sent">A email was sent to you to change your password</string>
+
+    <!-- Acerto Activity -->
+    <string name="msg_acerto">YOU\'RE RIGHT</string>
+    <string name="msg_parabens">CONGRATULATIONS!!</string>
+
+    <!-- Erro Activity -->
+    <string name="msg_dinheiro_insuficiente">CALM...   GET                  MORE COINS!</string>
+    <string name="msg_calma">CALM...</string>
+    <string name="msg_tente_novamente">TRY AGAIN!</string>
+
+    <!-- Avatar Activity -->
+    <string name="txt_meu_avatar">MY AVATAR</string>
+    <string name="txt_avatar">AVATAR</string>
+    <string name="txt_acerto">CORRECTS</string>
+    <string name="txt_erro">ERRORS</string>
+    <string name="txt_montar_avatar">Avatar Clothes</string>
+    <string name="txt_pontos">SCORE</string>
+    <string name="txt_moeda">COINS</string>
+    <string name="txt_confirmar">CONFIRM</string>
+
+    <!-- Guarda Roupa -->
+    <string name="guarda_roupa">WARD ROBE</string>
+    <string name="img_roupa">COSTUME IMAGE</string>
+
+    <!-- Compra -->
+    <string name="roupa_comprada">COSTUME BOUGHT!</string>
+    <string name="roupa_ja_comprada">YOU ALREADY BOUGTH THIS COSTUME</string>
+
+    <string name="roupa">HERE YOU CAN SEE THE CUSTOMIZATION OPTIONS</string>
+    <string name="camisa">SHIRT</string>
+    <string name="calca">PANTS</string>
+    <string name="sapato">SHOES</string>
+    <string name="oculos">GLASSES</string>
+
+    <string name="verificar">VERIFY</string>
+    <string name="exercicio5">MOUNT THE PHRASE:</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="appwidget_text">Know Down Log in to play</string>
+    <string name="add_widget">Add widget</string>
+    <string name="exit">EXIT</string>
+
+    <string name="menu_logout">logout</string>
+    <string name="menu_play">play</string>
+    <string name="menu_roupa">buy</string>
+    <string name="menu_guarda_roupa">ward robe</string>
+    <string name="menu_ranking">ranking</string>
+    <string name="menu_avatar">avatar</string>
+
+</resources>

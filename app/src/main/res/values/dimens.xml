@@ -1,0 +1,53 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_conteudo">10dp</dimen>
+    <dimen name="margin_top_conteudo">20dp</dimen>
+    <dimen name="exercicio1_top_margin_alternativas">25dp</dimen>
+    <dimen name="resposta1width">130dp</dimen>
+    <dimen name="resposta1height">30dp</dimen>
+    <dimen name="exercicio5width">270dp</dimen>
+    <dimen name="exercicio5height">150dp</dimen>
+    <dimen name="opcao_roupa_size">50dp</dimen>
+    <dimen name="opcao_roupa_padding">5dp</dimen>
+    <dimen name="titulo_pergunta">26sp</dimen>
+
+    <dimen name="scrollbarsize">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="espaco_altura_calca">12dp</dimen>
+    <dimen name="espaco_altura_camisa">10dp</dimen>
+
+    <dimen name="button_height">30dp</dimen>
+    <dimen name="activities_title_size">18sp</dimen>
+
+    <dimen name="register_margin">5dp</dimen>
+    <dimen name="register_text_view_margin_top">10dp</dimen>
+    <dimen name="register_margin_left">15dp</dimen>
+    <dimen name="register_title_margin">20dp</dimen>
+    <dimen name="register_image_size">70dp</dimen>
+    <dimen name="register_image_margin">10dp</dimen>
+    <dimen name="register_image_margin_offset">50dp</dimen>
+
+    <dimen name="login_name_size">60sp</dimen>
+    <dimen name="login_margin">15dp</dimen>
+
+    <dimen name="ranking_img_size">50dp</dimen>
+    <dimen name="ranking_height">35dp</dimen>
+    <dimen name="ranking_name_width">120dp</dimen>
+    <dimen name="ranking_score_width">40dp</dimen>
+
+    <dimen name="fonte_msg_acerto_erro">26sp</dimen>
+    <dimen name="fonte_msg_feedback">18sp</dimen>
+    <dimen name="img_acerto_size">140dp</dimen>
+
+    <dimen name="roupa_size">200dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_name">24sp</dimen>
+    <dimen name="widget_info">20sp</dimen>
+    <dimen name="widget_margin">8dp</dimen>
+</resources>

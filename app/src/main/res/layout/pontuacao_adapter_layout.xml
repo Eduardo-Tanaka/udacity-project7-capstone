@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="@dimen/ranking_img_size"
+        android:layout_height="@dimen/ranking_img_size"
+        android:src="@drawable/ranking_menino"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/imgRanking1"/>
+
+    <TextView
+        android:id="@+id/txtNomeRanking1"
+        android:layout_width="@dimen/ranking_name_width"
+        android:layout_height="@dimen/ranking_height"
+        tools:text="JOHN DOE"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/txtPontosRanking1"
+        android:layout_width="@dimen/ranking_score_width"
+        android:layout_height="@dimen/ranking_height"
+        android:layout_marginTop="8dp"
+        tools:text="70"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>
