@@ -16,16 +16,17 @@
         android:layout_height="wrap_content"
         android:background="@drawable/shape_red_white"
         android:textColor="@android:color/holo_red_dark"
-        android:width="60dp"
+        android:width="@dimen/score_width"
         tools:text="90"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/txtPontosErro"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginRight="@dimen/score_margin"
+        android:layout_marginEnd="@dimen/score_margin"
+        android:layout_marginTop="@dimen/score_margin_top"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
         android:shadowDy="5"
         android:shadowRadius="5"
         android:textColor="@color/yellow"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/lblPontosErro"
         android:layout_below="@id/txtPontosErro"
         android:layout_alignLeft="@id/txtPontosErro"
@@ -45,14 +46,14 @@
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_height="@dimen/content_height"
         android:layout_below="@+id/lblPontosErro"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="@dimen/margin_conteudo"
         android:layout_marginRight="@dimen/margin_conteudo"
         android:layout_marginTop="@dimen/margin_top_conteudo"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="@dimen/content_margin_bottom"
         android:background="@drawable/shape_content"
         android:id="@+id/relativeLayoutAcerto">
 
@@ -78,6 +79,7 @@
             android:layout_centerHorizontal="true" />
 
         <ImageView
+            android:contentDescription="@string/cd_img_error"
             android:layout_width="@dimen/img_acerto_size"
             android:layout_height="@dimen/img_acerto_size"
             android:id="@+id/imageView"
@@ -99,11 +101,13 @@
             android:id="@+id/txtErroFeedback" />
 
         <ImageView
+            android:contentDescription="@string/cd_img_ok"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/acerto"
             android:layout_below="@id/imageView"
-            android:layout_toRightOf="@id/txtErroFeedback" />
+            android:layout_toRightOf="@id/txtErroFeedback"
+            android:layout_toEndOf="@id/txtErroFeedback"/>
     </RelativeLayout>
 
     <TextView
@@ -117,7 +121,8 @@
         android:shadowDy="15"
         android:shadowRadius="15"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="29dp" />
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -128,9 +133,11 @@
         android:id="@+id/imgAvatarErro"
         android:background="@drawable/shape_red_white"
         android:layout_above="@id/txtAvatarErro"
-        android:layout_marginLeft="25dp">
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp">
 
         <ImageView
+            android:contentDescription="@string/cd_img_avatars"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/avatares"

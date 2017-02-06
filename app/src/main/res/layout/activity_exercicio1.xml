@@ -17,15 +17,16 @@
         tools:text="40"
         android:background="@drawable/shape_red_white"
         android:textColor="@android:color/holo_red_dark"
-        android:width="60dp"
+        android:width="@dimen/score_width"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/txtPontos1"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginRight="@dimen/score_margin"
+        android:layout_marginEnd="@dimen/score_margin"
+        android:layout_marginTop="@dimen/score_margin_top"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
         android:shadowDy="5"
         android:shadowRadius="5"
         android:textColor="@color/yellow"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/lblPontos1"
         android:maxLines="1"
         android:layout_marginTop="24dp"
@@ -46,14 +47,14 @@
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_height="@dimen/content_height"
         android:layout_below="@id/lblPontos1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="@dimen/margin_conteudo"
         android:layout_marginRight="@dimen/margin_conteudo"
         android:layout_marginTop="@dimen/margin_top_conteudo"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="@dimen/content_margin_bottom"
         android:background="@drawable/shape_content"
         android:id="@+id/relativeLayout">
 
@@ -75,7 +76,7 @@
             android:layout_height="@dimen/resposta1height"
             tools:text="OPT1"
             android:background="@drawable/shape_pergunta"
-            android:textSize="16sp"
+            android:textSize="@dimen/ex1_opt_text_size"
             android:id="@+id/btnEx1Opcao1"
             android:layout_below="@id/txtExercicio1"
             android:layout_centerHorizontal="true"
@@ -86,7 +87,7 @@
             android:layout_height="@dimen/resposta1height"
             tools:text="OPT2"
             android:background="@drawable/shape_pergunta"
-            android:textSize="16sp"
+            android:textSize="@dimen/ex1_opt_text_size"
             android:id="@+id/btnEx1Opcao2"
             android:layout_below="@id/btnEx1Opcao1"
             android:layout_centerHorizontal="true"
@@ -96,7 +97,7 @@
             android:layout_width="@dimen/resposta1width"
             android:layout_height="@dimen/resposta1height"
             tools:text="OPT3"
-            android:textSize="16sp"
+            android:textSize="@dimen/ex1_opt_text_size"
             android:background="@drawable/shape_pergunta"
             android:id="@+id/btnEx1Opcao3"
             android:layout_below="@id/btnEx1Opcao2"
@@ -108,7 +109,7 @@
             android:layout_height="@dimen/resposta1height"
             tools:text="OPT4"
             android:background="@drawable/shape_pergunta"
-            android:textSize="16sp"
+            android:textSize="@dimen/ex1_opt_text_size"
             android:id="@+id/btnEx1Opcao4"
             android:layout_below="@id/btnEx1Opcao3"
             android:layout_centerHorizontal="true"
@@ -119,7 +120,7 @@
             android:layout_height="@dimen/resposta1height"
             tools:text="OPT5"
             android:background="@drawable/shape_pergunta"
-            android:textSize="16sp"
+            android:textSize="@dimen/ex1_opt_text_size"
             android:id="@+id/btnEx1Opcao5"
             android:layout_below="@id/btnEx1Opcao4"
             android:layout_centerHorizontal="true"
@@ -142,6 +143,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="15dp"
             android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
             android:visibility="invisible"/>
 
     </RelativeLayout>
@@ -157,7 +159,8 @@
         android:shadowDy="15"
         android:shadowRadius="15"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="29dp" />
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -169,9 +172,11 @@
         android:id="@+id/imgAvatar1"
         android:background="@drawable/shape_red_white"
         android:layout_above="@id/txtAvatar1"
-        android:layout_marginLeft="25dp">
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp">
 
         <ImageView
+            android:contentDescription="@string/cd_img_avatars"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/avatares"

@@ -22,6 +22,7 @@
 
     <LinearLayout
         android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="8dp"
         android:layout_width="300dp"
         android:layout_gravity="center"
@@ -38,6 +39,7 @@
             android:id="@+id/btnConfirmar"
             android:text="@string/txt_confirmar"
             android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal" />

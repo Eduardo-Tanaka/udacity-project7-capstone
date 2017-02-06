@@ -60,7 +60,7 @@ public class AcertoActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     userDB = dataSnapshot.getValue(User.class);
-                    txtPontosAcerto.setText(userDB.getScore()+"");
+                    txtPontosAcerto.setText(String.valueOf(userDB.getScore()));
                 }
 
                 @Override

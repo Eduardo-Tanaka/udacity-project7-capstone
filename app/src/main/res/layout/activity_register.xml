@@ -49,6 +49,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/user"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_text_view_margin_top"/>
 
                 <EditText
@@ -59,6 +60,7 @@
                     android:id="@+id/edtRegisterUserName"
                     android:maxLines="1"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_margin"/>
 
                 <TextView
@@ -66,6 +68,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/email"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_text_view_margin_top"/>
 
                 <EditText
@@ -76,6 +79,7 @@
                     android:id="@+id/edtRegisterEmail"
                     android:maxLines="1"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_margin"/>
 
                 <TextView
@@ -83,6 +87,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/password"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_text_view_margin_top"/>
 
                 <EditText
@@ -93,6 +98,7 @@
                     android:id="@+id/edtPassword"
                     android:maxLines="1"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_margin"/>
 
                 <TextView
@@ -100,6 +106,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/password_confirm"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_text_view_margin_top"/>
 
                 <EditText
@@ -110,6 +117,7 @@
                     android:id="@+id/edtPassword2"
                     android:maxLines="1"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_margin"/>
 
                 <TextView
@@ -117,6 +125,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/choose_avatar"
                     android:layout_marginLeft="@dimen/register_margin_left"
+                    android:layout_marginStart="@dimen/register_margin_left"
                     android:layout_marginTop="@dimen/register_text_view_margin_top"/>
 
                 <LinearLayout
@@ -125,6 +134,7 @@
                     android:layout_gravity="center_horizontal">
 
                     <ImageView
+                        android:contentDescription="@string/cd_img_girl"
                         android:layout_width="@dimen/register_image_size"
                         android:layout_height="@dimen/register_image_size"
                         android:id="@+id/imgGirl"
@@ -133,12 +143,14 @@
                         android:clickable="true"/>
 
                     <ImageView
+                        android:contentDescription="@string/cd_img_boy"
                         android:layout_width="@dimen/register_image_size"
                         android:layout_height="@dimen/register_image_size"
                         android:id="@+id/imgBoy"
                         android:src="@drawable/boy"
                         android:layout_marginTop="@dimen/register_image_margin"
                         android:layout_marginLeft="@dimen/register_image_margin_offset"
+                        android:layout_marginStart="@dimen/register_image_margin_offset"
                         android:clickable="true"/>
                 </LinearLayout>
             </LinearLayout>

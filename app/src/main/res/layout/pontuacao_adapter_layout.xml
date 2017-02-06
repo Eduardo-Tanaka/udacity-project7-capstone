@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <ImageView
+        android:contentDescription="@string/cd_img_avatar"
         android:layout_width="@dimen/ranking_img_size"
         android:layout_height="@dimen/ranking_img_size"
         android:src="@drawable/ranking_menino"
         android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
         android:id="@+id/imgRanking1"/>
 
     <TextView
@@ -19,6 +22,7 @@
         tools:text="JOHN DOE"
         android:gravity="center_vertical"
         android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"/>
 
@@ -31,5 +35,6 @@
         android:textColor="@android:color/holo_red_dark"
         android:gravity="center"
         android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
         android:background="@android:color/darker_gray"/>
 </LinearLayout>

@@ -27,7 +27,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Know"
+                android:text="@string/title_know"
                 android:textSize="@dimen/login_name_size"
                 android:textColor="@android:color/white"
                 android:shadowColor="@color/black"
@@ -35,12 +35,13 @@
                 android:shadowDy="15"
                 android:shadowRadius="15"
                 android:id="@+id/txtSaber"
-                android:layout_marginLeft="70dp"/>
+                android:layout_marginLeft="70dp"
+                android:layout_marginStart="70dp"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Down"
+                android:text="@string/title_down"
                 android:textSize="@dimen/login_name_size"
                 android:paddingBottom="20dp"
                 android:gravity="center"
@@ -67,6 +68,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/email"
                 android:layout_marginLeft="@dimen/login_margin"
+                android:layout_marginStart="@dimen/login_margin"
                 android:layout_marginTop="@dimen/login_margin"
                 android:textStyle="bold"
                 android:textColor="@color/black" />
@@ -88,6 +90,7 @@
                 android:text="@string/password"
                 android:textColor="@color/black"
                 android:layout_marginLeft="@dimen/login_margin"
+                android:layout_marginStart="@dimen/login_margin"
                 android:textStyle="bold" />
 
             <EditText
@@ -120,7 +123,8 @@
                     android:textColor="@color/yellow"
                     android:background="@drawable/shape_timer"
                     android:id="@+id/btnLogin"
-                    android:layout_marginRight="@dimen/login_margin"/>
+                    android:layout_marginRight="@dimen/login_margin"
+                    android:layout_marginEnd="@dimen/login_margin"/>
 
                 <Button
                     android:layout_width="130dp"
@@ -143,11 +147,13 @@
             android:layout_marginTop="-10dp">
 
             <ImageView
+                android:contentDescription="@string/cd_img_trophy"
                 android:id="@+id/imgLoginRanking"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
                 android:src="@drawable/trophy"
-                android:layout_marginLeft="25dp"/>
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"/>
 
             <Button
                 android:layout_width="wrap_content"
@@ -177,7 +183,8 @@
                 android:background="@drawable/shape_timer"
                 android:gravity="center"
                 android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp"/>
+                android:layout_marginLeft="30dp"
+                android:layout_marginStart="30dp"/>
         </LinearLayout>
 
     </LinearLayout>

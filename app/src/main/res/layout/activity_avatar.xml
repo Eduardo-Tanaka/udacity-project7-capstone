@@ -16,11 +16,12 @@
         android:layout_height="wrap_content"
         android:text="@string/txt_meu_avatar"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="@dimen/layout_title_text_size"
         android:textAlignment="center"
         android:background="@drawable/shape_timer"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/margin_conteudo"
         android:layout_marginLeft="@dimen/margin_conteudo"
+        android:layout_marginStart="@dimen/margin_conteudo"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -31,15 +32,16 @@
         tools:text="10"
         android:background="@drawable/shape_red_white"
         android:textColor="@android:color/holo_red_dark"
-        android:width="60dp"
+        android:width="@dimen/score_width"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/txtPontosAvatar"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginRight="@dimen/score_margin"
+        android:layout_marginEnd="@dimen/score_margin"
+        android:layout_marginTop="@dimen/score_margin_top"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -51,7 +53,7 @@
         android:shadowRadius="5"
         android:textColor="@color/yellow"
         android:maxLines="1"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/lblPontosAvatar"
         android:layout_marginTop="24dp"
         android:layout_alignLeft="@id/txtPontosAvatar"
@@ -60,14 +62,14 @@
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_height="@dimen/content_height"
         android:layout_below="@+id/lblPontosAvatar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="@dimen/margin_conteudo"
         android:layout_marginRight="@dimen/margin_conteudo"
         android:layout_marginTop="@dimen/margin_top_conteudo"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="@dimen/content_margin_bottom"
         android:background="@drawable/shape_content"
         android:id="@+id/relativeLayoutAcerto">
 
@@ -138,11 +140,13 @@
             android:id="@+id/relativeLayoutAvatar">
 
             <ImageView
+                android:contentDescription="@string/cd_img_back_avatar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/avatar_background"/>
 
             <ImageView
+                android:contentDescription="@string/cd_img_shirt"
                 android:layout_width="80dp"
                 android:layout_height="90dp"
                 android:layout_marginTop="91dp"
@@ -151,6 +155,7 @@
                 android:id="@+id/avatar_camisa"/>
 
             <ImageView
+                android:contentDescription="@string/cd_img_pants"
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:elevation="4dp"
@@ -159,15 +164,20 @@
                 android:layout_marginTop="168dp" />
 
             <ImageView
+                android:contentDescription="@string/cd_img_shoes"
                 android:layout_width="70dp"
                 android:layout_height="30dp"
                 android:elevation="2dp"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/avatar_sapato"
                 android:layout_alignBottom="@+id/imgAvatar0"
-                android:paddingLeft="1dp" />
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:paddingStart="1dp"
+                android:paddingEnd="1dp"/>
 
             <ImageView
+                android:contentDescription="@string/cd_img_line"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/imgAvatar0"
@@ -177,12 +187,14 @@
     </RelativeLayout>
 
     <ImageView
+        android:contentDescription="@string/cd_img_avatars"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:src="@drawable/avatares"
         android:layout_alignParentBottom="true"
         android:id="@+id/imgMontarAvatar"
         android:layout_marginLeft="@dimen/margin_conteudo"
+        android:layout_marginStart="@dimen/margin_conteudo"
         android:clickable="true" />
 
     <TextView
@@ -199,6 +211,7 @@
         android:shadowRadius="5"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@id/imgMontarAvatar"
+        android:layout_toEndOf="@id/imgMontarAvatar"
         android:textAlignment="center"
         android:padding="5dp"
         android:clickable="true"

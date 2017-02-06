@@ -15,6 +15,7 @@
 
     <!-- Alerta da roupa -->
     <string name="btn_cancelar">CANCEL</string>
+    <string name="btn_confirm">CONFIRM</string>
     <string name="alerta_messagem">Do you want to dress this costume?</string>
 
     <!-- Register Activity -->
@@ -82,5 +83,32 @@
     <string name="menu_guarda_roupa">ward robe</string>
     <string name="menu_ranking">ranking</string>
     <string name="menu_avatar">avatar</string>
+
+    <!-- Content Description -->
+    <string name="cd_img_avatar">avatar image</string>
+    <string name="cd_img_ok">ok image</string>
+    <string name="cd_img_error">error image</string>
+    <string name="cd_img_costume">costume image</string>
+    <string name="cd_img_coin">coin image</string>
+    <string name="cd_img_avatars">avatars image</string>
+    <string name="cd_img_girl">girl image</string>
+    <string name="cd_img_boy">boy image</string>
+    <string name="cd_img_back_avatar">avatar background</string>
+    <string name="cd_img_shirt">shirt image</string>
+    <string name="cd_img_trophy">trophy image</string>
+    <string name="cd_img_pants">pants image</string>
+    <string name="cd_img_shoes">shoes image</string>
+    <string name="cd_img_line">line image</string>
+    <string name="cd_img_ward_robe">ward robe image</string>
+    <string name="title_know">Know</string>
+    <string name="title_down">Down</string>
+
+    <!-- Price -->
+    <string name="price1">$ 10</string>
+    <string name="price2">$ 20</string>
+    <string name="price3">$ 30</string>
+    <string name="price4">$ 40</string>
+    <string name="price5">$ 50</string>
+    <string name="price6">$ 60</string>
 
 </resources>

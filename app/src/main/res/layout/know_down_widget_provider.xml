@@ -12,6 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:contentDescription="@string/appwidget_text"
         android:text="@string/appwidget_text"
         android:textColor="#ffffff"
@@ -24,6 +25,7 @@
         tools:text="coins 60"
         android:id="@+id/widget_coin"
         android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:textColor="@color/white"
         android:textSize="@dimen/widget_info"/>
 
@@ -33,6 +35,7 @@
         tools:text="points 60"
         android:id="@+id/widget_score"
         android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:textColor="@color/white"
         android:textSize="@dimen/widget_info"/>
 

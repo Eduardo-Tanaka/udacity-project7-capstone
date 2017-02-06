@@ -17,15 +17,16 @@
         tools:text="40"
         android:background="@drawable/shape_red_white"
         android:textColor="@android:color/holo_red_dark"
-        android:width="60dp"
+        android:width="@dimen/score_width"
         android:textAlignment="center"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/txtPontos5"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginRight="@dimen/score_margin"
+        android:layout_marginEnd="@dimen/score_margin"
+        android:layout_marginTop="@dimen/score_margin_top"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -36,7 +37,7 @@
         android:shadowDy="5"
         android:shadowRadius="5"
         android:textColor="@color/yellow"
-        android:textSize="16sp"
+        android:textSize="@dimen/score_text_size"
         android:id="@+id/lblPontos5"
         android:maxLines="1"
         android:layout_marginTop="24dp"
@@ -46,14 +47,14 @@
     <RelativeLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="460dp"
+        android:layout_height="@dimen/content_height"
         android:layout_below="@+id/lblPontos5"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="@dimen/margin_conteudo"
         android:layout_marginRight="@dimen/margin_conteudo"
         android:layout_marginTop="@dimen/margin_top_conteudo"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="@dimen/content_margin_bottom"
         android:background="@drawable/shape_content"
         android:id="@+id/relativeLayout">
 
@@ -67,6 +68,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="25dp"
+            android:layout_marginStart="15dp"
             android:id="@+id/txtExercicio5"
             android:layout_centerHorizontal="true"/>
 
@@ -77,6 +79,7 @@
             android:layout_below="@id/txtExercicio5"
             android:layout_marginTop="50dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
             android:layout_marginBottom="40dp"
             android:id="@+id/edtConteudo5"
             android:textAlignment="center"
@@ -100,7 +103,7 @@
                 android:id="@+id/btnEx5Opcao1"
                 android:layout_below="@id/edtConteudo5"
                 android:clickable="true"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -110,7 +113,7 @@
                 android:background="@drawable/shape_pergunta"
                 android:id="@+id/btnEx5Opcao2"
                 android:clickable="true"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -120,7 +123,7 @@
                 android:background="@drawable/shape_pergunta"
                 android:id="@+id/btnEx5Opcao3"
                 android:clickable="true"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -130,7 +133,7 @@
                 android:background="@drawable/shape_pergunta"
                 android:id="@+id/btnEx5Opcao4"
                 android:clickable="true"
-                android:textSize="16dp"/>
+                android:textSize="16sp"/>
 
         </LinearLayout>
 
@@ -151,6 +154,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginBottom="15dp"
             android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
             android:visibility="invisible"/>
 
     </RelativeLayout>
@@ -166,7 +170,8 @@
         android:shadowDy="15"
         android:shadowRadius="15"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="29dp" />
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -178,9 +183,11 @@
         android:id="@+id/imgAvatar5"
         android:background="@drawable/shape_red_white"
         android:layout_above="@id/txtAvatar5"
-        android:layout_marginLeft="25dp">
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp">
 
         <ImageView
+            android:contentDescription="@string/cd_img_avatars"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/avatares"

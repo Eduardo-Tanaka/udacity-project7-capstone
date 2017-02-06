@@ -72,7 +72,7 @@ public class Exercicio5Activity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     userDB = dataSnapshot.getValue(User.class);
-                    txtPontos5.setText(userDB.getScore()+"");
+                    txtPontos5.setText(String.valueOf(userDB.getScore()));
 
                     Random r = new Random();
                     int n = r.nextInt(3) + 1000;

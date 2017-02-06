@@ -57,7 +57,7 @@ public class CompraActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     userDB = dataSnapshot.getValue(User.class);
-                    txtPontosCompra.setText(userDB.getCoin()+"");
+                    txtPontosCompra.setText(String.valueOf(userDB.getCoin()));
 
                     bundle = getIntent().getExtras();
 

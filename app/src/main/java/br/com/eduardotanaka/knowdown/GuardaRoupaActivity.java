@@ -119,7 +119,7 @@ public class GuardaRoupaActivity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     userDB = dataSnapshot.getValue(User.class);
-                    txtPontosGuardaRoupa.setText(userDB.getScore()+"");
+                    txtPontosGuardaRoupa.setText(String.valueOf(userDB.getScore()));
 
                     int j = 1;
                     int k = 1;

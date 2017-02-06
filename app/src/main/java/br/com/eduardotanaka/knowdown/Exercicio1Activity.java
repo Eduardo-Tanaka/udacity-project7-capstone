@@ -81,7 +81,7 @@ public class Exercicio1Activity extends AppCompatActivity {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     userDB = dataSnapshot.getValue(User.class);
-                    txtPontos1.setText(userDB.getScore()+"");
+                    txtPontos1.setText(String.valueOf(userDB.getScore()));
                     mDatabase.child("questions").child("1").addListenerForSingleValueEvent(
                         new ValueEventListener() {
                             @Override
